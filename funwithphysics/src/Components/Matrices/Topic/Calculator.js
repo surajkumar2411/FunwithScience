@@ -984,7 +984,7 @@ function Calculator() {
   const ref = useRef(null);
 
   //Determinant Calculator
-  const determinantCalculator = () => {
+  const DeterminantCalculator = () => {
     const [x, setx] = useState(null);
     const [showModal, setShowModal] = useState(false);
     const [showError, setShowError] = useState(false);
@@ -1478,7 +1478,7 @@ function Calculator() {
     );
   };
 
-  const inverseCalculator = () => {
+  const InverseCalculator = () => {
     const [x, setx] = useState(null);
     const [showModal, setShowModal] = useState(false);
     const [showError, setShowError] = useState(false);
@@ -2159,7 +2159,7 @@ function Calculator() {
     );
   };
 
-  const matrixMultiplicationCalculator = () => {
+  const MatrixMultiplicationCalculator = () => {
     const [r1, setr1] = useState(null);
     const [c1, setc1] = useState(null);
     const [r2, setr2] = useState(null);
@@ -2902,7 +2902,7 @@ function Calculator() {
     );
   };
 
-  const transposeCalculator = () => {
+  const TransposeCalculator = () => {
     const [showError, setShowError] = useState(false);
     const [row, setRow] = useState(null);
     const [col, setCol] = useState(null);
@@ -3267,7 +3267,7 @@ function Calculator() {
     );
   };
 
-  const addSubCalculator = () => {
+  const AddSubCalculator = () => {
     const [showError, setShowError] = useState(false);
     const [r, setR] = useState(null);
     const [c, setC] = useState(null);
@@ -4123,18 +4123,18 @@ function Calculator() {
     let currentCall;
     switch (key) {
       case "Determinants":
-        currentCall = determinantCalculator();
+        currentCall = DeterminantCalculator();
         break;
       case "Inverse of a Matrix":
-        currentCall = inverseCalculator();
+        currentCall = InverseCalculator();
         break;
       case "Matrix Multiplication":
-        currentCall = matrixMultiplicationCalculator();
+        currentCall = MatrixMultiplicationCalculator();
         break;
       case "Transpose of a Matrix":
-        currentCall = transposeCalculator();
+        currentCall = TransposeCalculator();
       case "Addition Or Subtraction on Matrices":
-        currentCall = addSubCalculator();
+        currentCall = AddSubCalculator();
       default:
         break;
     }
